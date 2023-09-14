@@ -1,0 +1,7 @@
+#!/bin/bash
+date
+echo "===================="
+gcc -o teststrtol teststrtol.c str.c
+
+./teststrtol
+rm teststrtol

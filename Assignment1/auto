@@ -1,0 +1,12 @@
+#!/bin/bash
+a="wc209"
+gcc209 -o wc209 wc209.c
+for i in {01..70}
+do
+    ./samplewc209 < ./tests/input/sample$i.txt > ./output/outputsa$i 2> ./output/errorsa$i
+    ./wc209 < ./tests/input/sample$i.txt > ./output/outputmy$i 2> ./output/errorsmy$i
+    echo "$i: "
+    diff ./output/outputsa$i ./output/outputmy$i
+    diff ./output/errorsa$i ./output/errorsmy$i
+    # rm output1 output2 errors1 errors2
+done

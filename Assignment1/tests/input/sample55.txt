@@ -1,0 +1,6 @@
+[System]
+LangId = LANG_CHINESE, SUBLANG_CHINESE_TRADITIONAL
+GuidProfile={D38EFF65-AA46-4fd5-91A7-67845FB02F5B}
+Description="Chinese Traditional Array"
+Display Description="@%programFiles%\Windows NT\TableTextService\TableTextService.dll,-11"
+IconIndex=ICON_ARRAY

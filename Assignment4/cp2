@@ -1,0 +1,77 @@
+#!/bin/bash
+gcc209 -c -g -O0 -no-pie -o mydc.o mydc.s
+gcc209 -no-pie -o mydc mydc.o
+echo "----------test_start----------"
+echo "add_test01"
+./mydc < ./tests/input/add_test01.txt >stdout 2>stderr
+diff ./tests/answer/add_test01.stdout stdout
+diff ./tests/answer/add_test01.stderr stderr
+echo "add_test02"
+./mydc < ./tests/input/add_test02.txt >stdout 2>stderr
+diff ./tests/answer/add_test02.stdout stdout
+diff ./tests/answer/add_test02.stderr stderr
+echo "add_test05"
+./mydc < ./tests/input/add_test05.txt >stdout 2>stderr
+diff ./tests/answer/add_test05.stdout stdout
+diff ./tests/answer/add_test05.stderr stderr
+echo "add_test09"
+./mydc < ./tests/input/add_test09.txt >stdout 2>stderr
+diff ./tests/answer/add_test09.stdout stdout
+diff ./tests/answer/add_test09.stderr stderr
+echo "add_test10"
+./mydc < ./tests/input/add_test10.txt >stdout 2>stderr
+diff ./tests/answer/add_test10.stdout stdout
+diff ./tests/answer/add_test10.stderr stderr
+echo "c_test01"
+./mydc < ./tests/input/c_test01.txt >stdout 2>stderr
+diff ./tests/answer/c_test01.stdout stdout
+diff ./tests/answer/c_test01.stderr stderr
+echo "div_test01"
+./mydc < ./tests/input/div_test01.txt >stdout 2>stderr
+diff ./tests/answer/div_test01.stdout stdout
+diff ./tests/answer/div_test01.stderr stderr
+echo "div_test09"
+./mydc < ./tests/input/div_test09.txt >stdout 2>stderr
+diff ./tests/answer/div_test09.stdout stdout
+diff ./tests/answer/div_test09.stderr stderr
+echo "f_test01"
+./mydc < ./tests/input/f_test01.txt >stdout 2>stderr
+diff ./tests/answer/f_test01.stdout stdout
+diff ./tests/answer/f_test01.stderr stderr
+echo "integration_test01"
+./mydc < ./tests/input/integration_test01.txt >stdout 2>stderr
+diff ./tests/answer/integration_test01.stdout stdout
+diff ./tests/answer/integration_test01.stderr stderr
+echo "mod_test01"
+./mydc < ./tests/input/mod_test01.txt >stdout 2>stderr
+diff ./tests/answer/mod_test01.stdout stdout
+diff ./tests/answer/mod_test01.stderr stderr
+echo "mod_test06"
+./mydc < ./tests/input/mod_test06.txt >stdout 2>stderr
+diff ./tests/answer/mod_test06.stdout stdout
+diff ./tests/answer/mod_test06.stderr stderr
+echo "mul_test01"
+./mydc < ./tests/input/mul_test01.txt >stdout 2>stderr
+diff ./tests/answer/mul_test01.stdout stdout
+diff ./tests/answer/mul_test01.stderr stderr
+echo "p_test01"
+./mydc < ./tests/input/p_test01.txt >stdout 2>stderr
+diff ./tests/answer/p_test01.stdout stdout
+diff ./tests/answer/p_test01.stderr stderr
+echo "pow_test01"
+./mydc < ./tests/input/pow_test01.txt >stdout 2>stderr
+diff ./tests/answer/pow_test01.stdout stdout
+diff ./tests/answer/pow_test01.stderr stderr
+echo "pow_test02"
+./mydc < ./tests/input/pow_test02.txt >stdout 2>stderr
+diff ./tests/answer/pow_test02.stdout stdout
+diff ./tests/answer/pow_test02.stderr stderr
+echo "q_test01"
+./mydc < ./tests/input/q_test01.txt >stdout 2>stderr
+diff ./tests/answer/q_test01.stdout stdout
+diff ./tests/answer/q_test01.stderr stderr
+echo "sub_test01"
+./mydc < ./tests/input/sub_test01.txt >stdout 2>stderr
+diff ./tests/answer/sub_test01.stdout stdout
+diff ./tests/answer/sub_test01.stderr stderr
+echo "----------test_done----------"

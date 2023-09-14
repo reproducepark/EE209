@@ -1,0 +1,7 @@
+#!/bin/bash
+date
+echo "===================="
+gcc209 -o testjh testjh.c str.c
+
+./testjh
+rm testjh

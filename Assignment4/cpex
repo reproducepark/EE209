@@ -1,0 +1,5 @@
+#!/bin/bash
+as --32 -g example1.s -o dc.o
+gcc209 -g -m32 dc.o -o dc209
+# ./dc209
+# lldb mydc

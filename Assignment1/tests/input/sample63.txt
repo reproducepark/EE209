@@ -1,0 +1,7 @@
+2021-04-10 16:07:46 [Agent.cpp:323-pid(41452)] ERROR  -  option(i) error(1073)(0x431)
+2022-02-24 22:29:30 [Agent.cpp:323-pid(31620)] ERROR  -  option(i) error(1073)(0x431)
+2022-03-23 09:43:32 [Agent.cpp:323-pid(33832)] ERROR  -  option(i) error(1073)(0x431)
+2022-03-23 09:43:34 [Agent.cpp:323-pid(10572)] ERROR  -  option(i) error(1073)(0x431)
+2022-03-23 09:44:23 [Agent.cpp:323-pid(33960)] ERROR  -  option(i) error(1073)(0x431)
+2022-03-23 09:44:24 [Agent.cpp:323-pid(25152)] ERROR  -  option(i) error(1073)(0x431)
+2022-08-26 17:21:42 [Agent.cpp:206-pid(15232)] DEBUG  -  agent service remove entry

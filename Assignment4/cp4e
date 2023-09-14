@@ -1,0 +1,17 @@
+#!/bin/bash
+gcc209 -c -g -O0 -no-pie -o mydc.o mydc.s
+gcc209 -no-pie -o mydc mydc.o
+echo "----------test_start----------"
+./mydc < ./tests/jhtest/jhtest.txt >stdout 2>stderr
+# show the output
+cat stdout
+cat stderr
+
+echo "----------test_done----------"
+
+echo "----------test_start----------"
+
+dc < ./tests/jhtest/jhtest.txt >stdoute 2>stderre
+cat stdoute
+cat stderre
+echo "----------test_done----------"

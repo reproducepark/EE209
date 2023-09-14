@@ -1,0 +1,13 @@
+#!/bin/bash
+date
+echo "===================="
+gcc -o temp temp.c str.c
+
+# ./sgrep "*og*e" < ./files/google.txt
+./temp "*og*e" < google.txt
+# grep "*og*e" < /home/jaehyun/CWorkspace/Assignment2/files/google.txt > google2.out
+
+# diff google.out google2.out
+# rm google.out google2.out
+
+rm temp

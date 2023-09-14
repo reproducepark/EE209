@@ -1,0 +1,15 @@
+#!/bin/bash
+date
+echo "===================="
+gcc209 -o clientmy clientmy.c str.c
+
+# ./clientmy StrGetLenth
+# ./clientmy StrCopy
+# ./clientmy StrCompare
+# ./clientmy StrFindChr
+# ./clientmy StrFindStr
+# ./clientmy StrConcat
+./clientmy StrToLong
+# ./clientmy StrCaseCompare
+
+rm clientmy

@@ -1,0 +1,21 @@
+#!/bin/bash
+date
+echo "===================="
+gcc209 -o sgrep sgrep.c str.c
+
+./sgrep "*og*e" < ./files/google.txt > google1.out
+
+grep "og.\{0,100\}e" < ./files/google.txt > google2.out
+
+diff google1.out google2.out
+# rm google1.out google2.out
+
+# ./sgrep "s*t" < ./files/microsoft.txt
+# ./sgrep "s t" < ./files/microsoft.txt
+# ./sgrep "s t" < ./files/long.txt
+# ./sgrep "*og*e" < google.txt > google.out
+# ./sgrep "*og*e" < google.txt
+# cat google.out
+# rm google.out 
+
+rm sgrep

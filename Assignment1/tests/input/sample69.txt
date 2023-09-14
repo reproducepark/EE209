@@ -1,0 +1,4 @@
+#!/bin/bash
+a="wc209"
+b="decomment"
+gcc209 -o wc209 wc209.c

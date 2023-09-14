@@ -1,0 +1,38 @@
+#!/bin/bash
+date
+echo "===================="
+
+gcc209 -o sgrep sgrep.c str.c
+# ./sgrep "s*t" < files/microsoft.txt
+
+echo "1: ===================="
+./tests/input/find01.sh >stdout 2>stderr
+diff ./tests/answer/find01.stdout stdout
+diff ./tests/answer/find01.stderr stderr
+rm stdout stderr
+
+echo "2: ===================="
+./tests/input/find02.sh >stdout 2>stderr
+diff ./tests/answer/find02.stdout stdout
+diff ./tests/answer/find02.stderr stderr
+rm stdout stderr
+
+echo "3: ===================="
+./tests/input/find03.sh >stdout 2>stderr
+diff ./tests/answer/find03.stdout stdout
+diff ./tests/answer/find03.stderr stderr
+rm stdout stderr
+
+echo "4: ===================="
+./tests/input/find08.sh >stdout 2>stderr
+diff ./tests/answer/find08.stdout stdout
+diff ./tests/answer/find08.stderr stderr
+rm stdout stderr
+
+echo "5: ===================="
+./tests/input/find09.sh >stdout 2>stderr
+diff ./tests/answer/find09.stdout stdout
+diff ./tests/answer/find09.stderr stderr
+rm stdout stderr
+
+rm sgrep

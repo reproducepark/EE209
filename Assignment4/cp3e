@@ -1,0 +1,29 @@
+#!/bin/bash
+gcc209 -c -g -O0 -no-pie -o mydc.o mydc.s
+gcc209 -no-pie -o mydc mydc.o
+echo "----------test_start----------"
+for i in {1..9}
+do
+    echo "jhtest0$i"
+    ./mydc < ./tests/jhtest/jhtest0$i.txt >stdout 2>stderr
+    dc < ./tests/jhtest/jhtest0$i.txt >stdoute 2>stderre
+    diff stdout stdoute
+    diff stderr stderre
+done
+for i in {10..19}
+do
+    echo "jhtest$i"
+    ./mydc < ./tests/jhtest/jhtest$i.txt >stdout 2>stderr
+    dc < ./tests/jhtest/jhtest$i.txt >stdoute 2>stderre
+    diff stdout stdoute
+    diff stderr stderre
+done
+for i in {21..79}
+do
+    echo "jhtest$i"
+    ./mydc < ./tests/jhtest/jhtest$i.txt >stdout 2>stderr
+    dc < ./tests/jhtest/jhtest$i.txt >stdoute 2>stderre
+    diff stdout stdoute
+    diff stderr stderre
+done
+echo "----------test_done----------"

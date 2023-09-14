@@ -1,0 +1,9 @@
+#!/bin/bash
+#get input number
+i=71
+gcc209 -o wc209 wc209.c
+./samplewc209 < ./tests/input/sample$i.txt > ./output/outputsa$i 2> ./output/errorsa$i
+./wc209 < ./tests/input/sample$i.txt > ./output/outputmy$i 2> ./output/errorsmy$i
+echo "$i: "
+diff ./output/outputsa$i ./output/outputmy$i
+diff ./output/errorsa$i ./output/errorsmy$i

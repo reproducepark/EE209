@@ -1,0 +1,5 @@
+#!/bin/bash
+gcc209 -c -g -O0 -no-pie -o mydc.o mydc.s
+gcc209 -no-pie -o mydc mydc.o
+./mydc
+# lldb mydc

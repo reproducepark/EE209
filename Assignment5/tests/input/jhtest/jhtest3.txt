@@ -1,0 +1,4 @@
+cd | sort
+setenv | sort
+exit | sort
+unsetenv | sort

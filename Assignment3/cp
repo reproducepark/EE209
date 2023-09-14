@@ -1,0 +1,4 @@
+#!/bin/bash
+gcc209 -g -o main memleak2.c customer_manager1.c 
+# gcc209 -g -o main test.c 
+valgrind ./main

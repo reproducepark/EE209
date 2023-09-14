@@ -1,0 +1,16 @@
+state : 0, char : a
+state : 1, char : b
+state : 1, char : c
+state : 1, char : /
+state : 1, char : *
+state : 1, char : d
+state : 1, char : e
+state : 1, char : f
+state : 1, char : *
+state : 1, char : /
+state : 1, char : g
+state : 1, char : h
+state : 1, char : i
+state : 1, char : 
+
+1 1 14
